@@ -1,0 +1,379 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.clear{clear: both;}
+.fl-left{float: left;}
+.fl-right{float: right;}
+h2{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 5px;
+    color: #DF1A5A;
+}
+p{
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+}
+            /* -------- Start nav ------- */
+.nav{
+    background: #360836;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav ul li{
+    display: inline-block;
+    margin-right: 15px;
+    line-height: 50px;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: #ff0048;
+    font-size: 19px;
+}
+.nav ul li .active{color: #fff;}
+.nav ul li:hover a{color: #fff;}
+             /* -------- Start header ------- */
+header{
+    text-align: center;
+    background-image: url(../Images/cover.png);
+    background-size: cover;
+    color: #fff;
+    height: 600px;
+    position: relative;
+}
+header .folk{
+    padding-top: 100px;
+    margin-bottom: 80px;
+}
+header .folk h1{
+    margin: 0;
+    font-size: 48px;
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
+}
+header .folk h2{
+    padding-top: 15px;
+    word-spacing: 15px;
+    font-weight: 500;
+    color: #fff;
+    font-size: 35px;
+}
+header .points span{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #fff;
+    margin: 10px;
+}
+header .work{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-133px);
+    background-color: #FF0048;
+    width: 250px;
+    font-size: 20px;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+header .work:after{
+    content: '';
+    position: absolute;
+    top: 42px;
+    left: 50%;
+    transform: translateX(-22px);
+    border-top: 20px solid #FF0048;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid transparent;
+}
+/* -------- Start Gallery ------- */
+.gallery .image{
+    width: 25%;
+    height: 252px;
+    float: left;    
+}
+.gallery .o-1{background-image: url(../Images/image_1.jpg);}
+.gallery .o-2{background-image: url(../Images/image_2.jpg);}
+.gallery .o-3{background-image: url(../Images/image_3.jpg);}
+.gallery .o-4{background-image: url(../Images/image_4.jpg);}
+.gallery .o-5{background-image: url(../Images/image_5.jpg);}
+.gallery .o-6{background-image: url(../Images/image_6.jpg);}
+.gallery .o-7{background-image: url(../Images/image_7.jpg);}
+.gallery .o-8{background-image: url(../Images/image_8.jpg);}
+.gallery .o-9{background-image: url(../Images/image_9.jpg);}
+.gallery .o-10{background-image: url(../Images/image_12.jpg);}
+.gallery .o-11{background-image: url(../Images/image_11.jpg);}
+.gallery .o-12{background-image: url(../Images/image_10.jpg);}
+
+.gallery .image .over{
+    background-color: rgba(0,0,0,.5);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.gallery .image:hover .over{opacity: 1;}
+/* -------- Start Web Design ------- */
+.meet{
+    width: 100%;
+    position: relative;
+    background-color: #F5F5F5;
+    text-align: center;
+    overflow: hidden;
+}
+.meet .design{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #FF0048;
+}
+.meet .design p{
+    margin: 0;
+    padding: 10px;
+    color: #fff;
+}
+.meet .design:after{
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-20px);
+    border-top: 20px solid #FF0048;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid transparent;
+}
+.meet .persons{
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+.meet .persons h2{
+    margin: 0;
+    padding-top: 80px;
+    color: #FF0048;
+    font-size: 30px;
+    word-spacing: 10px;
+}
+.meet .persons .devoloper{
+    margin: 30px auto;
+    width: 65%;
+    position: relative;
+    overflow: hidden;
+}
+.meet .devoloper .profile {
+    width: 400px;
+    height: 400px;
+    z-index: 2;
+}
+.meet .devoloper .profile:first-of-type{float: left;margin-bottom: 40px;}
+.meet .devoloper .profile:nth-of-type(2){float: right;margin-bottom: 40px;}
+.meet .devoloper .profile:nth-of-type(3){float: left;}
+.meet .devoloper .profile:nth-of-type(4){float: right;}
+.meet .devoloper .pro-1{background-image: url(../Images/Person_1.jpg);}
+.meet .devoloper .pro-2{background-image: url(../Images/Person_2.jpg);}
+.meet .devoloper .pro-3{background-image: url(../Images/Person_3.jpg);}
+.meet .devoloper .pro-4{background-image: url(../Images/Person_1.jpg);}
+
+.meet .devoloper .profile .social-over{
+    background-color: rgba(0,0,0,.7);
+    width: 100%;
+    height: 100%;
+    color: #FF0048;
+    z-index: 3;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+.meet .devoloper .profile:hover .social-over{opacity: 1}
+.meet .profile .social-over h3{
+    padding-top: 100px;
+    margin: 0;
+    font-size: 40px;
+    font-weight: normal;
+    letter-spacing: 3px;
+}
+.meet .profile .social-over p{color: #fff;margin-bottom: 50px;}
+.meet .profile .social-over a{
+    text-decoration: none;
+    padding: 10px;
+    color: #000;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 10px;
+    transition: all .3s ease-in-out;
+}
+.meet .profile .social-over a:hover{
+    background-color: #FF0048;
+    color: #fff;
+}
+/* -------- Start Web Design ------- */
+.our-content{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #fff;
+    background-image: url(../Images/Cover_2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    overflow: hidden;
+}
+.our-content .content{
+    width: 40%;
+    float: left;
+    margin-bottom: 20px;
+}
+.our-content .content:first-of-type{margin-right: 9%}
+.our-content .content:nth-of-type(3){margin-right: 9%}
+.our-content .content h2{
+    font-size: 28px;
+    letter-spacing: 5px;
+    font-weight: normal;
+}
+.our-content .content p{
+    font-size: 17px;
+    color: #ece2e2;
+    line-height: 1.6;
+}
+.our-content .content > div {
+    text-align: center;
+}
+.our-content .content span{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #fff;
+    margin: 10px;
+}
+/* -------- Start contact ------- */
+.contact{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    background-image: url(../Images/coverPage2.PNG);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contact h2{
+    margin: 0;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    font-size: 45px;
+    font-weight: 500;
+    font-style: italic;
+}
+.contact p{
+    word-spacing: 10px;
+    margin: 0;
+    padding-bottom: 30px;
+}
+.contact .cont{
+    margin: auto;
+    width: 500px;
+}
+.contact .cont h2{
+    font-size: 35px;
+    margin: 0;
+    padding: 10px;
+    color: #FF0048;
+}
+.contact .cont input,
+.contact .cont textarea{
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #FF0048;
+    border: none;
+    outline: none;
+    font-size: 19px;
+    padding: 7px;
+}
+.contact .cont textarea{height: 160px;}
+::placeholder {color: #FFF;}
+/* -------- Start Floker ------- */
+.folkter{
+    background-color: #F5F5F5;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    overflow: hidden;
+    text-align: center;
+}
+.folkter h2{font-size: 35px;}
+.folkter a{
+    margin-right: 10px;
+}
+/* -------- Start service ------- */
+.book-me{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    background-image: url(../Images/coverPage2.PNG);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.book-me h2{font-size: 40px;}
+.cover{
+    width: 800px;
+    height: 300px;
+    background: #fff;
+    margin: auto;
+    padding-top: 3%;
+}
+.cover .left{
+    width: 45%;
+    margin-left: 5%;
+    height: 252px;
+}
+.cover .right{
+    width: 45%;
+    background: #eee;
+    margin-right: 5%;
+    height: 199px;
+    padding-top: 6%;
+}
+.cover .right p{
+    font-size: 20px;
+}
+/* -------- Start footer ------- */
+footer{
+    font-size: 18px;
+    padding: 15px;
+    text-align: center;
+    background-color: #DEDDDD;
+}
+/* -------------------------- Global Style ---------------------- */
+.contact .cont button,
+.cover .right button,
+.meet .persons button{
+    margin-top: 10px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    outline: none;
+    font-size: 19px;
+    padding: 8px 30px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    overflow: hidden;
+}
+.contact .cont button:hover,
+.cover .right button:hover,
+.meet .persons button:hover{
+    background: #FF0048;
+    color: #000;
+}
+
+
+
